@@ -1,0 +1,152 @@
+.footer {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        @include media ($sm) {
+            padding-bottom: 39px;
+            padding-top: 50px;
+        }
+
+        @include media ($lg) {
+            gap: 30px;
+            align-items: flex-start;
+            padding-top: 70px;
+            padding-bottom: 0;
+        }
+    }
+
+    @include media ($lg) {
+        &__flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        font-style: normal;
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 166%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: $black-default;
+
+        @include media ($lg) {
+            align-items: flex-start;
+        }
+    }
+
+    &__links {
+        text-decoration: none;
+        color: $black-default;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            font-size: 20px;
+            color: $primary;
+        }
+    }
+
+    &__instagram {
+        background: url(../img/svg/instagram.svg);
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            background: url(../img/svg/instagram-hover.svg);
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__facebook {
+        background: url(../img/svg/facebook.svg);
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            background: url(../img/svg/facebook-hover.svg);
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__twitter {
+        background: url(../img/svg/twitter.svg);
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            background: url(../img/svg/twitter-hover.svg);
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__linkedin {
+        background: url(../img/svg/linkedin.svg);
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            background: url(../img/svg/linkedin-hover.svg);
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+
+    &__title {
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: 0.05em;
+        color: $black-default;
+
+        @include media ($md) {
+            font-size: 48px;
+            line-height: 64px;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+    }
+
+    &__rights {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 166%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: $black-default;
+        padding-top: 40px;
+        padding-bottom: 50px;
+
+        @include media ($md) {
+            font-size: 12px;
+        }
+
+        @include media ($lg) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}

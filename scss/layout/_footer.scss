@@ -1,0 +1,7 @@
+footer {
+    margin-top: 70px;
+    @include media ($md) {
+        margin-top: 90px;
+    }
+    background-color: #F4F4F4;
+}
